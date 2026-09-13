@@ -12,6 +12,41 @@
 
 Zap is an open, local-first terminal with first-class AI and agent support. Plug in any AI provider, bring in any CLI agent, manage SSH hosts inside the terminal — with keys, history and agent state staying on your machine by default.
 
+## Install this fork on macOS
+
+The current release of the [ThalesMMS fork](https://github.com/ThalesMMS/zap) supports **Apple Silicon Macs**. The app is signed with Developer ID and notarized by Apple.
+
+### Homebrew
+
+With [Homebrew](https://brew.sh/) installed, run:
+
+```sh
+brew install --cask ThalesMMS/tap/zap
+```
+
+Use the full name `ThalesMMS/tap/zap`: the short name `zap` identifies Zed Attack Proxy in Homebrew's official catalog. The two packages cannot be installed together.
+
+If you already have a manually installed `Zap.app` in Applications, quit it and move it to a backup folder before installing through Homebrew. Keep your settings and application data in place.
+
+To update:
+
+```sh
+brew update
+brew upgrade --cask ThalesMMS/tap/zap
+```
+
+To uninstall the app while keeping its settings and data:
+
+```sh
+brew uninstall --cask ThalesMMS/tap/zap
+```
+
+The cask is maintained in [ThalesMMS/homebrew-tap](https://github.com/ThalesMMS/homebrew-tap).
+
+### Direct download
+
+Download the macOS ARM64 ZIP from [this fork's releases](https://github.com/ThalesMMS/zap/releases), extract it, and move `Zap.app` to Applications. If replacing an existing copy, quit Zap first and keep a backup of the old app.
+
 ## What Zap adds over upstream Warp
 
 - **No mandatory cloud** — no account, login, Drive sync or cloud agent history required.
